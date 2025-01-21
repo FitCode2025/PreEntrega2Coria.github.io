@@ -1,1 +1,1 @@
-# PreEntrega3Coria.github.io
+# TiendaDeSuplementosCoria.github.io
