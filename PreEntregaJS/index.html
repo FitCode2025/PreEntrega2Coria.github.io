@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Suplementos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda de Suplementos</h1>
+    </header>
+    <div class="container">
+        <div class="product" data-name="Proteína Whey" data-price="25000">
+            <h3>Proteína Whey</h3>
+            <p>Precio: $25.000</p>
+            <label for="wheyQty">Cantidad:</label>
+            <input type="number" id="wheyQty" min="1" value="1">
+            <button onclick="addToCart(this)">Agregar al carrito</button>
+        </div>
+        <div class="product" data-name="Creatina" data-price="30000">
+            <h3>Creatina</h3>
+            <p>Precio: $30.000</p>
+            <label for="creatinaQty">Cantidad:</label> <input type="number" id="creatinaQty" min="1" value="1">
+            <button onclick="addToCart(this)">Agregar al carrito</button>
+        </div>
+        <div class="product" data-name="BCAAs" data-price="25000">
+            <h3>BCAAs</h3>
+            <p>Precio: $25.000</p>
+            <label for="bcaasQty">Cantidad:</label>
+            <input type="number" id="bcaasQty" min="1" value="1">
+            <button onclick="addToCart(this)">Agregar al carrito</button>
+        </div>
+    </div>
+    <div class="cart" id="cart">
+        <h3>Carrito de compras</h3>
+        <ul id="cartItems"></ul>
+        <p>Total: $<span id="cartTotal">0</span></p>
+        <div id="cart-message"></div>
+        <button id="finalizePurchase" onclick="finalizePurchase()">Finalizar Compra</button>
+        <button id="clearCart" onclick="clearCart()">Vaciar Carrito</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
